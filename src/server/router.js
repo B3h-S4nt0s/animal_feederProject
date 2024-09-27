@@ -1,14 +1,9 @@
 const express = require(`express`);
 const path = require('path');
 const router = express.Router();
-const bodyParser = require('body-parser');
-const { error } = require('console');
 
 // Carrega as variáveis de ambiente do arquivo .env
 require('dotenv').config();
-
-router.use(bodyParser.urlencoded({ extended: false }));
-router.use(bodyParser.json());
 
 // Configura o middleware para analisar o corpo das requisições
 router.use(express.json());

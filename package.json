@@ -1,18 +1,16 @@
 {
   "name": "projeto_alimentador_animais",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "build to feeder animal for busy peoples than have animals in your home and not has time to give food to they",
+  "main": "nodemon src/server/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/B3h-S4nt0s/animal_feederProject.git"
+    "start": "nodemon "
   },
   "keywords": [
+    "alimentador de animais",
     "alimentador",
-    "de",
-    "animais"
+    "animais",
+    "animals food"
   ],
   "author": "Breno S Santos",
   "license": "MIT",
@@ -20,12 +18,18 @@
     "url": "https://github.com/B3h-S4nt0s/animal_feederProject/issues"
   },
   "homepage": "https://github.com/B3h-S4nt0s/animal_feederProject#readme",
-  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B3h-S4nt0s/animal_feederProject.git"
+  },
   "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.21.0",
     "firebase": "^10.13.2",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
