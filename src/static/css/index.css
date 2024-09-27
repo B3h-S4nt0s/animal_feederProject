@@ -1,0 +1,86 @@
+@import url(../css/rootStyle.css);
+
+html > body {
+    background: var(--backRoxo);
+    width: 100vw;
+    height: 100vh;
+}
+
+.section_login {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    border-radius: 60px;
+    border: 3px solid var(--cOrg);
+    width: 30vw;
+    height: 67vh;
+    margin: 7% auto;
+    background-size: cover;
+    background-image: url(./../imgs/7c82ed3d-ef23-49bd-a9c6-1598e3708d66.jpeg);
+    box-sizing: border-box; 
+    box-shadow: 13px 6px var(--cOrg);
+}
+
+.menu_lr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px 0;
+    width: 30vw;
+    height: 65vh;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.org_menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 70px;
+    width: 100%;
+}
+
+.org_menu > input {
+    border-bottom: 1px solid var(--Rd);
+    border-top: 1px solid var(--Rd);
+    height: 26px;
+    background: var(--tptGnBe);
+    display: flex;
+    color: var(--cBk);
+}
+.org_menu > input:visited {
+    background: var(--semiTransparente);
+}
+.org_menu > input:focus {
+    background: var(--semiTransparente);
+    color: var(--cWht);
+}
+.org_menu > label {
+    display: flex;
+    justify-content: center;
+    color: var(--cWht);
+    font-weight: bold;
+    text-transform: uppercase;
+    background: var(--semiTransparente);
+}
+
+#cad_res {
+    width: 150px;
+    height: 40px;
+    background: var(--cGry);
+    border-radius: 9px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--cWht);
+}
+#cad_res:hover {
+    background: var(--cOrg);
+    color: var(--cBk);
+}
