@@ -1,4 +1,4 @@
-# Arquivo de Controle - pessoail
+# Arquivo de Controle - pessoal
 Trata-se de uma central para analise, controle, construção e repação de projetos e andamento dos mesmos.
 
 - [x] Mockup
