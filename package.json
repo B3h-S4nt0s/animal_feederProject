@@ -2,9 +2,10 @@
   "name": "projeto_alimentador_animais",
   "version": "1.0.0",
   "description": "build to feeder animal for busy peoples than have animals in your home and not has time to give food to they",
-  "main": "nodemon src/server/main.js",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon "
+    "start": "nodemon src/server/main.js"
   },
   "keywords": [
     "alimentador de animais",

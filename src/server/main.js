@@ -1,19 +1,21 @@
-const express = require(`express`);
-const path = require('path');
-const app = express();
-const port = process.env.PORT || 3330;
-// Carrega as variáveis de ambiente do arquivo .env
-require('dotenv').config();
+import express from "express";
+import dotenv from "dotenv";
+import router from "./router.js";
 
+// Carrega as variáveis de ambiente do arquivo .env
+dotenv.config();
+const port = process.env.PORT || 3330;
+
+const app = express(); // Initialize express app
 // Configura o mecanismo de visualização EJS
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, '..', 'views'));
 
-app.use(require(`./router`));
+// Use the router
+app.use(router);
 
 // server listen at PORT
 app.listen(port, () => {
     console.log(`Server is running!! On localhost:${port}`);
 });
 
-module.exports = app;
+export default app;
