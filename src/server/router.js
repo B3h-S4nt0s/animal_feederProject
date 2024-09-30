@@ -14,4 +14,24 @@ router.get('/', (req, res) => {
     res.render('index');
 });
 
+router.post('/', (req, res) => {
+    res.status(200);
+    res.redirect('/about');
+});
+
+router.get('/about', (req, res) => {
+    res.status(200);
+    res.render('about');
+});
+
+router.get('/dashboard', (req, res) => {
+    res.status(200);
+    res.render('dashboard');
+});
+
+router.get('/profile:id', (req, res) => {
+    res.status(200);
+    res.render('profile', { id: req.params.id });
+});
+
 export default router;
