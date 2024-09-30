@@ -1,4 +1,4 @@
-# Pasta de controle de projetos - pessoais
+# Arquivo de Controle - pessoail
 Trata-se de uma central para analise, controle, construção e repação de projetos e andamento dos mesmos.
 
 - [x] Mockup
