@@ -1,4 +1,5 @@
-import express from "express";
+import express from 'express';
+import path from 'path';
 import dotenv from "dotenv";
 import router from "./router.js";
 
@@ -9,6 +10,8 @@ const port = process.env.PORT || 3330;
 const app = express(); // Initialize express app
 // Configura o mecanismo de visualização EJS
 app.set('view engine', 'ejs');
+app.set('views', path.resolve('src/views'));   // Pasta views
+app.set('static', path.resolve('src/static')); // Pasta static
 
 // Use the router
 app.use(router);
