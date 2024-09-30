@@ -29,7 +29,7 @@ router.get('/dashboard', (req, res) => {
     res.render('dashboard');
 });
 
-router.get('/profile:id', (req, res) => {
+router.get('/profile', (req, res) => {
     res.status(200);
     res.render('profile', { id: req.params.id });
 });
