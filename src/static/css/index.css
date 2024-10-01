@@ -16,7 +16,7 @@ html > body {
     height: 67vh;
     margin: 7% auto;
     background-size: cover;
-    background-image: url(./../imgs/7c82ed3d-ef23-49bd-a9c6-1598e3708d66.jpeg);
+    background-image: url(../imgs/7c82ed3d-ef23-49bd-a9c6-1598e3708d66.jpeg);
     box-sizing: border-box; 
     box-shadow: 13px 6px var(--cOrg);
 }
