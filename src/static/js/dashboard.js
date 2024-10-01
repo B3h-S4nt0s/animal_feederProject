@@ -35,8 +35,8 @@ submit.addEventListener(`click`, () => {
    fetch(`${urlfb}`, {
        method: `PATCH`,
        body: JSON.stringify(valJSON())
-   })                                // Busca
-   .then(resp => resp.json())  // converter para json
-   .then(json => console.log(json))    //imprimir dados no console
+   })                                                      // Busca
+   .then(resp => resp.json())                              // converter para json
+   .then(json => console.log(json))                        //imprimir dados no console
    .catch(err => console.log('Erro de solicitação', err)); // lidar com os erros do catch
 });
