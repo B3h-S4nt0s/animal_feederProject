@@ -6,6 +6,7 @@ Barando a entrada e logon, de qualquer um que esteja fora dos termos da aplicaç
 # Arquivo de Controle - pessoal
 <p>Trata-se de uma central para analise, controle, construção e repação de projetos e andamento dos mesmos.</p>
 <br>
+
 - [x] Mockup
 - [x] Criação dos arquivos JS6
 - [x] Criação dos arquivos html/EJS
