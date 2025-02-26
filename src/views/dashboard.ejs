@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="static/css/dashboard.css">
+    <link type="text/css" rel="stylesheet" href="public/css/dashboard.css">
     <title>projeto IOT - Animal Feeder</title>
 </head>
 
 <body>
     <header>
-        <div class="Active">
+        <div>
             <div class="divideCenter">
                 <div class="logo">
-                    <a href="/about"><img src="static/imgs/cats-dogs.png" alt="logo-png" srcset="static/imgs/cats-dogs.png"></a>
+                    <a href="/about"><img src="public/imgs/cats-dogs.png" alt="logo-png" srcset="public/imgs/cats-dogs.png"></a>
                 </div>
             </div>
             <div class="divideCenter">
@@ -26,7 +26,32 @@
         </div>
     </header>
     <main>
-        <div class="grade">
+        <section class="entradas">
+            <section class="values">
+                <div class="pesoAnimal">
+                    <label>Peso Animal: </label>
+                    <input type="number" name="peso" placeholder="">
+                    <div>g</div>
+                </div>
+                <div class="alturaAnimal">
+                    <label>Altura Animal: </label>
+                    <input type="number" name="altura" placeholder="">
+                    <div>cm</div>
+                </div>
+            </section>
+            <section class="values">
+                <div id="qtdRacao">
+                    <select>
+                        <option value="gato">gato</option>
+                        <option value="cachorro">cachorro</option>
+                    </select>
+                </div>
+            </section>
+            <div class="imcAnimal">
+                
+            </div>
+        </section>
+        <section class="grade">
             <h3>
                 Quadro de Alimentação
             </h3>
@@ -64,8 +89,8 @@
                     domingo
                 </div>
             </div>
-        </div>
+        </section>
     </main>
-    <script src="static/js/dashboard.js"></script>
+    <script src="public/js/dashboard.js"></script>
 </body>
 </html>

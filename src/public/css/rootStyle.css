@@ -45,7 +45,13 @@ html > body {
     height: 100vh;
     background: linear-gradient(0deg,#ff8100 0%, #ff800086 100%);
     position: relative;
-    overflow-y: scroll;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
 }
 
                 /* Menu inicial */
@@ -54,7 +60,7 @@ header {
     flex-direction: row;
     width: 100vw;
     height: 60px;
-    position: fixed;
+    position: relative;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -62,14 +68,13 @@ header {
     background: var(--backOrg);
     box-sizing: content-box;
     box-shadow: 0px 1px 2px 2px #000000;
-    border: 0 0 2px 0;
 }
 
 header > div {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 100%;
+    height: 60px;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
@@ -83,7 +88,7 @@ header > div > div.divideCenter {
     align-content: space-between;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: 100%;
     user-select: none;
 }
 
@@ -95,7 +100,7 @@ header > div > div.divideCenter {
     align-items: center;
     cursor: default;
     width: 100%;
-    height: 60px;
+    height: 100%;
     color: #000;
     text-align: center;
     font-family: Jim Nightshade;
@@ -115,7 +120,7 @@ header > div > div.divideCenter {
     justify-content: center;
     align-items: center;
     width: 400px;
-    height: 60px;
+    height: 100%;
 }
 
 .divideCenter > ul > li {
@@ -126,7 +131,7 @@ header > div > div.divideCenter {
     justify-content: center;
     align-items: center;
     width: 90px;
-    height: 60px;
+    height: 100%;
     text-shadow: -1px 1px 0px var(--cWht);
     font-family: "Amarante";
     font-weight: 600;
@@ -144,7 +149,18 @@ header > div > div.divideCenter {
 }
 
 main {
+    position: relative;
     display: flex;
     width: 100vw;
+    height: auto;
+    flex-direction: column;
+}
+
+.grade {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    margin: 0% 10%;
     height: auto;
 }

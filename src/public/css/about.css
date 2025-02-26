@@ -3,17 +3,16 @@
 .grade {
     display: flex;
     flex-direction: column;
-    height: 110vh;
+    height: auto;
     width: 80vw;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
     font-family: "Amarante";
     text-align: justify;
 }
 
 .grade > h1 {
-    text-align: center !important;
+    text-align: center;
 }
 .grade > ul {
     padding-left: 2rem;

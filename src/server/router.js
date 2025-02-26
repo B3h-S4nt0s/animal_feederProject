@@ -29,9 +29,19 @@ router.get('/dashboard', (req, res) => {
     res.render('dashboard');
 });
 
-router.get('/profile', (req, res) => {
+router.get('/profile:id', (req, res) => { 
     res.status(200);
     res.render('profile', { id: req.params.id });
 });
+
+router.get('/error/:error', (req, res) => {
+    res.status(404);
+    res.render('error', { error: req.params.error });
+})
+
+router.all('/', (req, res) => {
+    res.status(404);
+    res.redirect('error');
+})
 
 export default router;
