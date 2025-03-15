@@ -1,36 +1,43 @@
 {
-  "name": "projeto_alimentador_animais",
+  "name": "animal-feeder",
   "version": "1.0.0",
-  "description": "build to feeder animal for busy peoples than have animals in your home and not has time to give food to they",
-  "main": "server.js",
+  "description": "A smart device to feed animals for busy people",
+  "main": "index.ts",
+  "engines": {
+    "node": "v23.7.0"
+  },
   "type": "module",
   "scripts": {
-    "start": "nodemon src/server/main.js"
+    "start": "node --watch --experimental-strip-types src/server/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "alimentador de animais",
-    "alimentador",
-    "animais",
-    "animals food"
+    "animal",
+    "feeder",
+    "smart",
+    "device",
+    "iot"
   ],
   "author": "Breno S Santos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/B3h-S4nt0s/animal_feederProject/issues"
+    "url": "https://github.com/B3h-S4nt0s/animal-feeder/issues"
   },
-  "homepage": "https://github.com/B3h-S4nt0s/animal_feederProject#readme",
+  "homepage": "https://github.com/B3h-S4nt0s/animal-feeder#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/B3h-S4nt0s/animal_feederProject.git"
+    "url": "git+https://github.com/B3h-S4nt0s/animal-feeder.git"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
-    "express": "^4.21.0",
-    "firebase": "^11.3.1",
+    "express": "^4.21.2",
+    "firebase-admin": "^13.2.0",
+    "jsonwebtoken": "^9.0.2",
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "nodemon": "^3.1.7"
+    "@types/express": "^5.0.0",
+    "ts-node": "^10.9.2"
   }
 }

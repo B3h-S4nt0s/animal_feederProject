@@ -1,8 +1,13 @@
-const menuLis = document.querySelectorAll(`.divideCenter > ul > li`);
+const [home, dashboard, profile] = document.querySelectorAll(`.divideCenter > ul > li`)
 
-menuLis[1].addEventListener(`click`, () => {
-    window.location.href = `dashboard`;
-});
-menuLis[0].addEventListener(`click`, () => {
-    window.location.href = `about`;
-});
+home.addEventListener(`click`, () => {
+    // window.location.href = `/`
+})
+
+dashboard.addEventListener(`click`, () => {
+    // window.location.href = `dashboard`
+})
+
+profile.addEventListener("click", () => {
+    // window.location.href = `profile`
+})

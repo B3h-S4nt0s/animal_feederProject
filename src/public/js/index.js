@@ -1,8 +1,35 @@
-const btnLogin = document.querySelector(`#cad_res`);
+const [home, dashboard, profile] = document.querySelectorAll(`.divideCenter > ul > li`)
 
-btnLogin.addEventListener(`click`, () => {
-    const formValue = document.querySelector(`form.menu_lr`);
-    const user = document.querySelector(`#username`).value;
-    const pass = document.querySelector(`div > input#password`).value;
-    formValue.action = `/login/${user}/${pass}/`;
-});
+home.addEventListener(`click`, () => {
+    // window.location.href = `/`
+})
+
+
+dashboard.addEventListener(`click`, () => {
+  fetch('/', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(dados)
+  })
+  .then(response => {
+    if (response.ok) {
+      return response.json() // Converte a resposta para JSON
+    } else {
+      throw new Error('Erro na autenticação')
+    }
+  })
+  .then(data => {
+    if (data.auth) {
+      window.location.href = data.redirectUrl
+    }
+  })
+  .catch(error => {
+    console.error('Erro:', error)
+  })
+})
+
+profile.addEventListener("click", () => {
+    // window.location.href = `profile`
+})

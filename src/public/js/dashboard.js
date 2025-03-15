@@ -1,11 +1,11 @@
 const menuLis = document.querySelectorAll(`.divideCenter > ul > li`);
 
 menuLis[0].addEventListener(`click`, () => {
-    window.location.href = `about`;
+    window.location.href = `/`;
 })
 
 menuLis[2].addEventListener(`click`, () => {
-    window.location.href = `profile`;
+    window.location.href = `/profile`;
 });
 
 const urlfb = `https://tcc-animalfeeder-default-rtdb.firebaseio.com/racao/-NiRahEfqc4XxRXWA51s`;
@@ -19,16 +19,7 @@ let h0 = document.querySelector("#h0");
  const apaga = document.querySelector("#delete");
 
 const valJSON = () => {
-    const feedForDay = nAlimentacoes.value*=1;
-    const valRacao = qtdRacao.value*=1.0;
-    const horaFeeder = h0.value;
-    const saltoHora = hh.value*=1;
-    return {
-        numeroAlimentacoes: feedForDay,
-        quantidadeRacao: valRacao,
-        horadeAlimentar: horaFeeder,
-        intervaloFeeder: saltoHora
-    }
+    
 };
 
 addEventListener(

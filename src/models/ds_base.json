@@ -1,0 +1,39 @@
+{
+  "users":[
+    {
+      "username": "admin",
+      "password": "2050amd",
+      "pets": [{
+        "pet_name": "petA",
+        "pet_idade": 5,
+        "pet_peso": 15,
+        "pet_altura": 60,
+        "pet_type": "gato"
+      }, {
+        "pet_name": "petB",
+        "pet_idade": 3,
+        "pet_peso": 5,
+        "pet_altura": 100,
+        "pet_type": "cachorro"
+      }],
+      "horary": {
+        "segunda": ["8:20", "8:21", "8:22", "8:23"],
+        "terça": ["8:20", "8:21", "8:22", "8:23"],
+        "quarta": ["8:20", "8:21", "8:22", "8:23"],
+        "quinta": ["8:20", "8:21", "8:22", "8:23"],
+        "sexta": ["8:20", "8:21", "8:22", "8:23"],
+        "sábado": ["8:20", "8:21", "8:22", "8:23"],
+        "domingo": ["8:20", "8:21", "8:22", "8:23"]
+      },
+      "check_horary": {
+        "segunda": ["check", "check", "check", "check"],
+        "terça": ["check", "check", "check", "check"],
+        "quarta": ["check", "check", "check", "check"],
+        "quinta": ["check", "check", "check", "check"],
+        "sexta": ["check", "check", "check", "check"],
+        "sábado": ["check", "check", "check", "check"],
+        "domingo": ["check", "check", "check", "check"]
+      }
+    }
+  ]
+}
