@@ -38,6 +38,7 @@ export class Aplication{
     this.server.set('videos', path.resolve(publicArchives, 'videos'))
   }
 
+  // Mensagem de Inicialização
   public localAplication() {
     return console.log(`htpp:localhost:${PORT}`)
   }
